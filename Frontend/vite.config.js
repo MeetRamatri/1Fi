@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   preview: {
-    allowedHosts: 'all'
+    allowedHosts: ['onefi-frontend-jr8e.onrender.com']
   }
 })
