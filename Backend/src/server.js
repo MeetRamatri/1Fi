@@ -12,10 +12,12 @@ app.use(express.json());
 
 const productRoutes = require('./routes/productRoutes');
 const variantRoutes = require('./routes/variantRoutes');
+const emiRoutes = require('./routes/emiRoutes');
 
 // Routes
 app.use('/api/products', productRoutes);
 app.use('/api/variants', variantRoutes);
+app.use('/api/emi', emiRoutes);
 
 app.get('/', (req, res) => {
     res.send('Server is running normally.');
