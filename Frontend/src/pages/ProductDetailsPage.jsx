@@ -13,7 +13,7 @@ function ProductDetailsPage() {
   useEffect(() => {
     const fetchProductDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/products/${slug}`);
+        const response = await fetch(`https://onefi-1-e6jj.onrender.com/api/products/${slug}`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
