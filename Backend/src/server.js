@@ -11,9 +11,11 @@ app.use(cors());
 app.use(express.json());
 
 const productRoutes = require('./routes/productRoutes');
+const variantRoutes = require('./routes/variantRoutes');
 
 // Routes
 app.use('/api/products', productRoutes);
+app.use('/api/variants', variantRoutes);
 
 app.get('/', (req, res) => {
     res.send('Server is running normally.');
