@@ -10,7 +10,11 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
+const productRoutes = require('./routes/productRoutes');
+
 // Routes
+app.use('/api/products', productRoutes);
+
 app.get('/', (req, res) => {
     res.send('Server is running normally.');
 });
